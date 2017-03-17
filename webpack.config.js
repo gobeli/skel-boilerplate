@@ -1,5 +1,6 @@
 const path = require('path')
 const webpack = require('webpack')
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const extractCSS = new ExtractTextPlugin('styles.css');
 
@@ -46,7 +47,8 @@ module.exports = {
     hints: false
   },
   plugins: [
-    extractCSS
+    extractCSS,
+    new CopyWebpackPlugin([{ from: 'app/public', to: '' }])
   ],
   devtool: '#eval-source-map'
 }

@@ -252,48 +252,48 @@
 			$x: '';
 
 			@if $breakpointName {
-				$x: '\\28' + $breakpointName + '\\\\29';
+				$x: '-' + $breakpointName;
 			}
 
-			.\31 2u#{$x}, .\31 2u \24 #{$x} { width: 100%; clear: none; margin-left: 0; }
-			.\31 1u#{$x}, .\31 1u \24 #{$x} { width: 91.6666666667%; clear: none; margin-left: 0; }
-			.\31 0u#{$x}, .\31 0u \24 #{$x} { width: 83.3333333333%; clear: none; margin-left: 0; }
-			.\39 u#{$x}, .\39 u \24 #{$x} { width: 75%; clear: none; margin-left: 0; }
-			.\38 u#{$x}, .\38 u \24 #{$x} { width: 66.6666666667%; clear: none; margin-left: 0; }
-			.\37 u#{$x}, .\37 u \24 #{$x} { width: 58.3333333333%; clear: none; margin-left: 0; }
-			.\36 u#{$x}, .\36 u \24 #{$x} { width: 50%; clear: none; margin-left: 0; }
-			.\35 u#{$x}, .\35 u \24 #{$x} { width: 41.6666666667%; clear: none; margin-left: 0; }
-			.\34 u#{$x}, .\34 u \24 #{$x} { width: 33.3333333333%; clear: none; margin-left: 0; }
-			.\33 u#{$x}, .\33 u \24 #{$x} { width: 25%; clear: none; margin-left: 0; }
-			.\32 u#{$x}, .\32 u \24 #{$x} { width: 16.6666666667%; clear: none; margin-left: 0; }
-			.\31 u#{$x}, .\31 u \24 #{$x} { width: 8.3333333333%; clear: none; margin-left: 0; }
+			.\31 2u#{$x}, .\31 2u--clear#{$x} { width: 100%; clear: none; margin-left: 0; }
+			.\31 1u#{$x}, .\31 1u--clear#{$x} { width: 91.6666666667%; clear: none; margin-left: 0; }
+			.\31 0u#{$x}, .\31 0u--clear#{$x} { width: 83.3333333333%; clear: none; margin-left: 0; }
+			.\39 u#{$x}, .\39 u--clear#{$x} { width: 75%; clear: none; margin-left: 0; }
+			.\38 u#{$x}, .\38 u--clear#{$x} { width: 66.6666666667%; clear: none; margin-left: 0; }
+			.\37 u#{$x}, .\37 u--clear#{$x} { width: 58.3333333333%; clear: none; margin-left: 0; }
+			.\36 u#{$x}, .\36 u--clear#{$x} { width: 50%; clear: none; margin-left: 0; }
+			.\35 u#{$x}, .\35 u--clear#{$x} { width: 41.6666666667%; clear: none; margin-left: 0; }
+			.\34 u#{$x}, .\34 u--clear#{$x} { width: 33.3333333333%; clear: none; margin-left: 0; }
+			.\33 u#{$x}, .\33 u--clear#{$x} { width: 25%; clear: none; margin-left: 0; }
+			.\32 u#{$x}, .\32 u--clear#{$x} { width: 16.6666666667%; clear: none; margin-left: 0; }
+			.\31 u#{$x}, .\31 u--clear#{$x} { width: 8.3333333333%; clear: none; margin-left: 0; }
 
-			.\31 2u \24 #{$x} + *,
-			.\31 1u \24 #{$x} + *,
-			.\31 0u \24 #{$x} + *,
-			.\39 u \24 #{$x} + *,
-			.\38 u \24 #{$x} + *,
-			.\37 u \24 #{$x} + *,
-			.\36 u \24 #{$x} + *,
-			.\35 u \24 #{$x} + *,
-			.\34 u \24 #{$x} + *,
-			.\33 u \24 #{$x} + *,
-			.\32 u \24 #{$x} + *,
-			.\31 u \24 #{$x} + * {
+			.\31 2u#{$x}--clear + *,
+			.\31 1u#{$x}--clear + *,
+			.\31 0u#{$x}--clear + *,
+			.\39 u#{$x}--clear + *,
+			.\38 u#{$x}--clear + *,
+			.\37 u#{$x}--clear + *,
+			.\36 u#{$x}--clear + *,
+			.\35 u#{$x}--clear + *,
+			.\34 u#{$x}--clear + *,
+			.\33 u#{$x}--clear + *,
+			.\32 u#{$x}--clear + *,
+			.\31 u#{$x}--clear + * {
 				clear: left;
 			}
 
-			.\-11u#{$x} { margin-left: 91.6666666667% }
-			.\-10u#{$x} { margin-left: 83.3333333333% }
-			.\-9u#{$x} { margin-left: 75% }
-			.\-8u#{$x} { margin-left: 66.6666666667% }
-			.\-7u#{$x} { margin-left: 58.3333333333% }
-			.\-6u#{$x} { margin-left: 50% }
-			.\-5u#{$x} { margin-left: 41.6666666667% }
-			.\-4u#{$x} { margin-left: 33.3333333333% }
-			.\-3u#{$x} { margin-left: 25% }
-			.\-2u#{$x} { margin-left: 16.6666666667% }
-			.\-1u#{$x} { margin-left: 8.3333333333% }
+			.\31 1u#{$x}--offset { margin-left: 91.6666666667% }
+			.\31 0u#{$x}--offset { margin-left: 83.3333333333% }
+			.\39 u#{$x}--offset { margin-left: 75% }
+			.\38 u#{$x}--offset { margin-left: 66.6666666667% }
+			.\37 u#{$x}--offset { margin-left: 58.3333333333% }
+			.\36 u#{$x}--offset { margin-left: 50% }
+			.\35 u#{$x}--offset { margin-left: 41.6666666667% }
+			.\34 u#{$x}--offset { margin-left: 33.3333333333% }
+			.\33 u#{$x}--offset { margin-left: 25% }
+			.\32 u#{$x}--offset { margin-left: 16.6666666667% }
+			.\31 u#{$x}--offset { margin-left: 8.3333333333% }
 
 	}
 

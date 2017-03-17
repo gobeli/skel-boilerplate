@@ -72,6 +72,10 @@
 			vertical-align: middle;
 			width: 7em;
 
+			&:focus {
+				outline: none;
+			}
+
 			&:before {
 				font-size: 1.25em;
 			}
